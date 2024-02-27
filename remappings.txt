@@ -2,6 +2,6 @@ ds-test/=lib/forge-std/lib/ds-test/src/
 forge-std/=lib/forge-std/src/
 @openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @openzeppelin/=lib/openzeppelin-contracts/
-safe-smart-account/=lib/safe-smart-account/contracts/
+@gnosis.pm/safe-contracts/=lib/safe-smart-account/
 solady/=lib/solady/
 solmate/=lib/solmate/
