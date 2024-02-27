@@ -4,4 +4,4 @@ forge-std/=lib/forge-std/src/
 @openzeppelin/=lib/openzeppelin-contracts/
 safe-smart-account/=lib/safe-smart-account/contracts/
 solady/=lib/solady/
-solmate/=lib/solmate/src/
+solmate/=lib/solmate/
