@@ -5,3 +5,4 @@ forge-std/=lib/forge-std/src/
 @gnosis.pm/safe-contracts/=lib/safe-smart-account/
 solady/=lib/solady/
 solmate/=lib/solmate/
+@uniswap/v2-periphery/=lib/v2-periphery/
