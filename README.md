@@ -17,20 +17,22 @@ DO NOT USE IN PRODUCTION.
 
 ## Table of Contents
 
-- [How to start?](#How_to_start?)
-- [Install Foundry](#Install_Foundry)
-  - [Subsection 1.1](#subsection-1.1)
+- [1. How to start?](#How_to_start?)
+  - [1.1 Install Foundry](#Install_Foundry)
+  - [1.2 Update Foundry](#subsection-1.1)
 - [Section 2](#section-2)
 
 
 ## How to start?
-#### 1. Install Foundry
-#### 2. Update Foundry
+#### 1.1 Install Foundry
+#### 1.2 Update Foundry
 ## Instructions & Solutions
 ### Challenge #1 - Unstoppable
 ### Solution #1 - Unstoppable
+
 <a name="How_to_start?"></a>
 ## How to start?
+
 <a name="Install_Foundry"></a>
 #### 1. Install Foundry
 To set up Foundry, the Foundry toolchain installer, use the following command: 
@@ -38,6 +40,7 @@ To set up Foundry, the Foundry toolchain installer, use the following command:
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
+<a name="Update_Foundry"></a>
 #### 2. Update Foundry
 In a fresh terminal session or subsequent to refreshing your PATH environment variable, execute the following command to acquire the most recent versions of the Forge and Cast binaries:
 ```shell
