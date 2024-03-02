@@ -21,6 +21,8 @@ DO NOT USE IN PRODUCTION.
   - [1.1 Install Foundry](#Install_Foundry)
   - [1.2 Update Foundry](#Update_Foundry)
 - [2. Instructions & Solutions](#InstructionsandSolutions)
+- [2.1 Challenge #1 - Unstoppable](#InstructionsandSolutions)
+- [2. Instructions & Solutions](#InstructionsandSolutions)
 
 
 ## 1. How to start?
@@ -31,23 +33,24 @@ DO NOT USE IN PRODUCTION.
 ### Solution #1 - Unstoppable
 
 <a name="How_to_start?"></a>
-## How to start?
+## 1. How to start?
 
 <a name="Install_Foundry"></a>
-#### 1.1 Install Foundry
+### 1.1 Install Foundry
 To set up Foundry, the Foundry toolchain installer, use the following command: 
 ```shell
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
 <a name="Update_Foundry"></a>
-#### 1.2 Update Foundry
+### 1.2 Update Foundry
 In a fresh terminal session or subsequent to refreshing your PATH environment variable, execute the following command to acquire the most recent versions of the Forge and Cast binaries:
 ```shell
 foundryup
 ```
 <a name="InstructionsandSolutions"></a>
 ## 2. Instructions & Solutions
+<a name="InstructionsandSolutions"></a>
 ### 2.1 Challenge #1 - Unstoppable
 There’s a tokenized vault with a million DVT tokens deposited. It’s offering flash loans for free, until the grace period ends.
 
