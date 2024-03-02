@@ -31,7 +31,7 @@ DO NOT USE IN PRODUCTION.
 ### Solution #1 - Unstoppable
 <a name="How_to_start?"></a>
 ## How to start?
-
+<a name="Install_Foundry"></a>
 #### 1. Install Foundry
 To set up Foundry, the Foundry toolchain installer, use the following command: 
 ```shell
