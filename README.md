@@ -17,7 +17,7 @@ DO NOT USE IN PRODUCTION.
 
 ## Table of Contents
 
-- [How to start?](#How to start?)
+- [How_to_start?](#How to start?)
 - [Install Foundry](#Install Foundry)
   - [Subsection 1.1](#subsection-1.1)
 - [Section 2](#section-2)
@@ -29,7 +29,7 @@ DO NOT USE IN PRODUCTION.
 ## Instructions & Solutions
 ### Challenge #1 - Unstoppable
 ### Solution #1 - Unstoppable
-
+<a name="How_to_start?"></a>
 ## How to start?
 
 #### 1. Install Foundry
