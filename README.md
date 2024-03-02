@@ -15,6 +15,14 @@ All Solidity code, practices and patterns in this repository are DAMN VULNERABLE
 
 DO NOT USE IN PRODUCTION.
 
+## Table of Contents
+
+- [How to start?](#How to start?)
+- [Install Foundry](#Install Foundry)
+  - [Subsection 1.1](#subsection-1.1)
+- [Section 2](#section-2)
+
+
 ## How to start?
 #### 1. Install Foundry
 #### 2. Update Foundry
