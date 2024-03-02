@@ -78,9 +78,9 @@ contract TestUnstoppable is Test {
         
         receiverContract.executeFlashLoan(100 ether);
         // vm.stopPrank();
-
+        // Sending 2 Wei to the Vault, although even 1 Wei is enough
         vm.prank(player);
-        token.transfer(address(vault), 1);
+        token.transfer(address(vault), 2);
 
         /** SUCCESS CONDITIONS - NO NEED TO CHANGE ANYTHING HERE */
 
