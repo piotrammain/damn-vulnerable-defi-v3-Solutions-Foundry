@@ -21,37 +21,31 @@ DO NOT USE IN PRODUCTION.
   - [1.1 Install Foundry](#Install_Foundry)
   - [1.2 Update Foundry](#Update_Foundry)
 - [2. Instructions & Solutions](#InstructionsandSolutions)
-- [2.1 Challenge #1 - Unstoppable](#InstructionsandSolutions)
-- [2. Instructions & Solutions](#InstructionsandSolutions)
-
-
-## 1. How to start?
-#### 1.1 Install Foundry
-#### 1.2 Update Foundry
-## Instructions & Solutions
-### Challenge #1 - Unstoppable
-### Solution #1 - Unstoppable
+  - [2.1 Challenge #1 - Unstoppable](#Challenge#1Unstoppable)
+  - [2.1 Solution #1 - Unstoppable](#Solution#1Unstoppable)
 
 <a name="How_to_start?"></a>
 ## 1. How to start?
 
 <a name="Install_Foundry"></a>
-### 1.1 Install Foundry
+#### 1.1 Install Foundry
 To set up Foundry, the Foundry toolchain installer, use the following command: 
 ```shell
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
 <a name="Update_Foundry"></a>
-### 1.2 Update Foundry
+#### 1.2 Update Foundry
 In a fresh terminal session or subsequent to refreshing your PATH environment variable, execute the following command to acquire the most recent versions of the Forge and Cast binaries:
 ```shell
 foundryup
 ```
+
 <a name="InstructionsandSolutions"></a>
 ## 2. Instructions & Solutions
-<a name="InstructionsandSolutions"></a>
-### 2.1 Challenge #1 - Unstoppable
+
+<a name="Challenge#1Unstoppable"></a>
+#### 2.1 Challenge #1 - Unstoppable
 There’s a tokenized vault with a million DVT tokens deposited. It’s offering flash loans for free, until the grace period ends.
 
 To pass the challenge, make the vault stop offering flash loans.
@@ -62,7 +56,8 @@ You start with 10 DVT tokens in balance.
 
 [Complete the challenge](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/TestUnstoppable.t.sol)
 
-### Solution #1 - Unstoppable
+<a name="#Solution#1Unstoppable"></a>
+#### Solution #1 - Unstoppable
 
 [Check the solution](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/SolutionUnstoppable.t.sol)
 
