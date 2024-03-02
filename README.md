@@ -17,8 +17,8 @@ DO NOT USE IN PRODUCTION.
 
 ## Table of Contents
 
-- [How_to_start?](#How to start?)
-- [Install Foundry](#Install Foundry)
+- [How to start?](#How_to_start?)
+- [Install Foundry](#Install_Foundry)
   - [Subsection 1.1](#subsection-1.1)
 - [Section 2](#section-2)
 
