@@ -21,6 +21,50 @@ In a fresh terminal session or subsequent to refreshing your PATH environment va
 ```shell
 foundryup
 ```
+## Solutions
+
+1. Unstoppable
+Challenge Objective: DOS Attack on Contract
+
+The primary objective of the initial challenge is to execute a Denial of Service (DOS) attack on the contract.
+
+Vulnerability in flashLoan Function:
+
+The flashLoan function contains a vulnerability identified as follows:
+```solidity
+uint256 balanceBefore = totalAssets();
+if (convertToShares(totalSupply) != balanceBefore) revert InvalidBalance();
+```
+Explanation:
+
+ERC4626 introduces a standard for tokenized vaults that track user deposit shares to determine rewards for staked tokens. In this context, the asset represents the underlying token deposited/withdrawn into the vault, while the share signifies the vault tokens minted/burned to represent user deposits.
+
+For this challenge, 'DVT' is the underlying token, and the vault token is deployed as 'oDVT'.
+
+Issues Identified:
+
+The condition: 
+```solidity
+(convertToShares(totalSupply) != balanceBefore)
+```
+enforces that the totalSupply of vault tokens must always equal the totalAsset of underlying tokens before any flash loan execution. This condition becomes problematic if there are alternative vault implementations diverting asset tokens to other contracts, rendering the flashLoan function inactive.
+
+The totalAssets function is overridden to always return the balance of the vault contract: 
+```solidity 
+(asset.balanceOf(address(this)))
+```
+This introduces a separate accounting system based on tracking the supply of vault tokens.
+
+Attack Strategy:
+
+The attack involves creating a conflict between the two accounting systems by manually transferring 'DVT' to the vault.
+```solidity
+// Sending 2 Wei to the Vault, although even 1 Wei is enough
+vm.prank(player);
+token.transfer(address(vault), 2);
+```
+
+
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
