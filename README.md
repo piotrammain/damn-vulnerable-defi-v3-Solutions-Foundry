@@ -8,6 +8,12 @@ Featuring flash loans, price oracles, governance, NFTs, DEXs, lending pools, sma
 
 The original repository, without solutions, can be found on the [Damn Vulnerable DeFi V3 Github page](https://github.com/tinchoabbate/damn-vulnerable-defi/tree/v3.0.0).
 
+## Disclaimer
+
+All Solidity code, practices and patterns in this repository are DAMN VULNERABLE and for educational purposes only.
+
+DO NOT USE IN PRODUCTION.
+
 ## How to start?
 
 #### 1. Install Foundry
