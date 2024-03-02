@@ -20,9 +20,10 @@ DO NOT USE IN PRODUCTION.
 - [1. How to start?](#How_to_start?)
   - [1.1 Install Foundry](#Install_Foundry)
   - [1.2 Update Foundry](#Update_Foundry)
-- [2. Instructions & Solutions](#InstructionsandSolutions)
+- [2. Instructions](#Instructions)
   - [2.1 Challenge #1 - Unstoppable](#Challenge#1Unstoppable)
-  - [2.1 Solution #1 - Unstoppable](#Solution#1Unstoppable)
+- [3. Solutions](#Solutions)
+  - [3.1 Solution #1 - Unstoppable](#Solution#1Unstoppable)
 
 <a name="How_to_start?"></a>
 ## 1. How to start?
@@ -41,8 +42,8 @@ In a fresh terminal session or subsequent to refreshing your PATH environment va
 foundryup
 ```
 
-<a name="InstructionsandSolutions"></a>
-## 2. Instructions & Solutions
+<a name="Instructions"></a>
+## 2. Instructions
 
 <a name="Challenge#1Unstoppable"></a>
 #### 2.1 Challenge #1 - Unstoppable
@@ -56,8 +57,11 @@ You start with 10 DVT tokens in balance.
 
 [Complete the challenge](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/TestUnstoppable.t.sol)
 
-<a name="#Solution#1Unstoppable"></a>
-#### Solution #1 - Unstoppable
+<a name="Solutions"></a>
+## 3. Solutions
+
+<a name="Solution#1Unstoppable"></a>
+#### 3.1 Solution #1 - Unstoppable
 
 [Check the solution](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/SolutionUnstoppable.t.sol)
 
