@@ -35,7 +35,6 @@ contract TestUnstoppable is Test {
     DamnValuableToken token;
     UnstoppableVault vault;
     
-
     function setUp() public {
         /* SETUP EXERCISE - DON'T CHANGE ANYTHING HERE */
         vm.startPrank(deployer);
@@ -62,13 +61,11 @@ contract TestUnstoppable is Test {
 
         vm.stopPrank();
 
-
         // Show it's possible for someUser to take out a flash loan
         vm.startPrank(someUser);
         receiverContract = new ReceiverUnstoppable(address(vault));
         receiverContract.executeFlashLoan(100 ether);
         vm.stopPrank();
-
     }
 
     function testUnstoppable() public {
