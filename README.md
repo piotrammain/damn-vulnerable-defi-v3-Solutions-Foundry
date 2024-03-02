@@ -1,3 +1,4 @@
+![](cover.png)
 # Damn Vulnerable DeFi V3 - Solutions in Foundry
 
 Implementations in Foundry addressing the challenges presented in the Damn Vulnerable DeFi V3 CTF [https://www.damnvulnerabledefi.xyz/](https://www.damnvulnerabledefi.xyz/) (created by 
