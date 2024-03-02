@@ -70,9 +70,6 @@ contract TestUnstoppable is Test {
 
     function testUnstoppable() public {
         /** CODE YOUR SOLUTION HERE */
-        // Sending 2 Wei to the Vault, although even 1 Wei is enough
-        vm.prank(player);
-        token.transfer(address(vault), 2);
 
         /** SUCCESS CONDITIONS - NO NEED TO CHANGE ANYTHING HERE */
         // It is no longer possible to execute flash loans
