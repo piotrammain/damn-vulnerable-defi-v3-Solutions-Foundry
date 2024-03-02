@@ -33,9 +33,10 @@ You start with 10 DVT tokens in balance.
 
 [Complete the challenge](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/TestUnstoppable.t.sol)
 
+### Solution Unstoppable
+
 [Check the solution](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/SolutionUnstoppable.t.sol)
 
-### Solution Unstoppable
 Challenge Objective: DOS Attack on Contract
 
 The primary objective of the initial challenge is to execute a Denial of Service (DOS) attack on the contract.
