@@ -52,7 +52,6 @@ contract SolutionUnstoppable is Test {
         assertEq(vault.totalAssets(), TOKENS_IN_VAULT);
         assertEq(vault.totalSupply(), TOKENS_IN_VAULT);
         assertEq(vault.maxFlashLoan(address(token)),TOKENS_IN_VAULT);
-        assertEq(vault.maxFlashLoan(address(token)), TOKENS_IN_VAULT);
         assertEq(vault.flashFee(address(token), TOKENS_IN_VAULT - 1), 0);
         assertEq(vault.flashFee(address(token), TOKENS_IN_VAULT), 50_000 ether);
 
