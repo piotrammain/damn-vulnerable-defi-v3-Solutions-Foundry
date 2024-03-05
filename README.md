@@ -22,8 +22,10 @@ DO NOT USE IN PRODUCTION.
   - [1.2 Update Foundry](#Update_Foundry)
 - [2. Instructions](#Instructions)
   - [2.1 Challenge #1 - Unstoppable](#Challenge#1Unstoppable)
+  - [2.2 Challenge #2 - NaiveReceiver](#Challenge#2NaiveReceiver)
 - [3. Solutions](#Solutions)
   - [3.1 Solution #1 - Unstoppable](#Solution#1Unstoppable)
+  - [3.2 Solution #2 - NaiveReceiver](#Solution#2NaiveReceiver)
 
 <a name="How_to_start?"></a>
 ## 1. How to start?
@@ -45,6 +47,7 @@ foundryup
 <a name="Instructions"></a>
 ## 2. Instructions
 
+
 <a name="Challenge#1Unstoppable"></a>
 #### 2.1 Challenge #1 - Unstoppable
 There’s a tokenized vault with a million DVT tokens deposited. It’s offering flash loans for free, until the grace period ends.
@@ -56,6 +59,20 @@ You start with 10 DVT tokens in balance.
 [See the contracts](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/src/unstoppable)
 
 [Complete the challenge](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/unstoppable/TestUnstoppable.t.sol)
+
+
+<a name="Challenge#2NaiveReceiver"></a>
+#### 2.2 Challenge #2 - Naive Receiver
+There’s a pool with 1000 ETH in balance, offering flash loans. It has a fixed fee of 1 ETH.
+
+A user has deployed a contract with 10 ETH in balance. It’s capable of interacting with the pool and receiving flash loans of ETH.
+
+Take all ETH out of the user’s contract. If possible, in a single transaction.
+
+[See the contracts](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/src/naive-receiver)
+
+[Complete the challenge](https://github.com/piotrammain/damn-vulnerable-defi-v3-Solutions-Foundry/tree/master/test/naive-receiver/TestNaiveReceiver.t.sol)
+
 
 <a name="Solutions"></a>
 ## 3. Solutions
@@ -104,3 +121,7 @@ The attack involves creating a conflict between the two accounting systems by ma
 vm.prank(player);
 token.transfer(address(vault), 2);
 ```
+<a name="Solution#2NaiveReceiver"></a>
+#### 3.2 Solution #2 - Naive Receiver
+
+
